@@ -1,0 +1,25 @@
+.source-code pro-<uniquifier> {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+    
+#title-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* This will cover the full viewport height */
+    background-image: url('../assets/images/title_bg.jpg'); /* Change this to the background color of your title page */
+    background-size:cover;
+    background-position:center;
+    z-index: 2; /* This should be higher than the main page's z-index */
+    transition: opacity 1s ease-out; /* This will create a fading out animation */
+    opacity: 1;
+}
+  
+  #main-page {
+    position: relative;
+    z-index: 1;
+  }
