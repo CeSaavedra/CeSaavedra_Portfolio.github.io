@@ -105,7 +105,7 @@
   }
 }
 #main-page {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -114,10 +114,13 @@
 }
 #sidenav, #content{
   position:relative;
-  min-height:100vh;
 }
 #sidenav{
-  background-color:#29005c;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:#1639af;
+  min-height:100vh
 }
 #sidenav .nav-item{
   text-align:center;
@@ -126,16 +129,16 @@
 }
 #sidenav .nav-link{
   color:white;
-  font-size: 250%;
+  font-size: 125%;
   font-family: "Lexend Deca", sans-serif;
   border: 2px solid white;
   border-radius:5%;
 }
 #sidenav .nav-link:hover{
-  background-color:#350076;
+  background-color:#102d8c;
 }
 #projects-title{
-  font-size: 200%;
+  font-size: 100%;
   text-align:center;
   padding-bottom:5%;
 
@@ -145,13 +148,13 @@
 }
 #github-link{
   position: absolute;
-  font-size:150%;
+  font-size:100%;
   bottom:2.5%;
   left:10%;
 }
 #github-link i{
   color:white;
-  padding-right:1em;
+  padding-right:0.75em;
 }
 button{
   background-color:transparent;
@@ -159,5 +162,89 @@ button{
 }
 
 #content{
-  background-color:#141414;
+  background-color:#060606;
+  margin-left:auto;
+  height:100%;
+}
+#main-desc{
+  position:relative;
+  margin:auto;
+  margin-top:2.5%;
+  height:10em;
+  width: 80%;
+  color:white;
+  text-align:center;
+  font-family: "Roboto Mono", monospace;
+  padding-bottom:12.5%;
+}
+#main-desc h1{
+  padding-top:3%;
+}
+#main-desc p{
+  position:relative;
+  font-family: "Lexend Deca", sans-serif;
+  font-size:120%;
+  padding-top:2.5%;
+  margin:auto;
+  width:80%;
+  color:#d2d2d2;
+}
+#featured-title{
+  position:relative;
+  text-align:center;
+  margin:auto;
+  color:white;
+  height:10%;
+  margin-top:5%;
+  font-family: "Roboto Mono", monospace;
+  font-size:250%;
+}
+.my-3{
+  height:40em;
+  display:flex;
+}
+#img-box{
+  position: relative;
+  background-color:black;
+  margin-top: auto;
+  margin-bottom:auto;
+  left: 0;
+  right: 0;
+  height: 80%; 
+  width:35%;
+  border-radius:5%;
+}
+#img-box img{
+  width:100%;
+  height:100%;    
+  max-height:100%;
+  max-width:100%;
+  object-fit:contain;
+}
+#post-info{
+  position:relative;
+  margin-top: auto;
+  margin-bottom:auto;
+  height:75%;
+  width:60%;
+  left:2%;
+  color:white;
+}
+#post-info p{
+  position:relative;
+  text-align:left;
+  top:15%;
+}
+#post-type{
+  position:relative;
+  left:90%;
+  width:10%;
+  height:15%;
+  border:2px solid orange;
+  border-radius:5%;
+}
+#post-type p{
+  text-align:center;
+  font-size:1.5em;
+  color:orange;
 }
