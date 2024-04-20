@@ -7,6 +7,12 @@
   font-weight: 350;
   font-style: normal;
 }
+.lexend-deca-font {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
 
 #title-page {
   position: absolute;
@@ -104,7 +110,54 @@
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color:red;
   z-index:1;
 }
+#sidenav, #content{
+  position:relative;
+  min-height:100vh;
+}
+#sidenav{
+  background-color:#29005c;
+}
+#sidenav .nav-item{
+  text-align:center;
+  width:100%;
+  padding:10%;
+}
+#sidenav .nav-link{
+  color:white;
+  font-size: 250%;
+  font-family: "Lexend Deca", sans-serif;
+  border: 2px solid white;
+  border-radius:5%;
+}
+#sidenav .nav-link:hover{
+  background-color:#350076;
+}
+#projects-title{
+  font-size: 200%;
+  text-align:center;
+  padding-bottom:5%;
 
+  font-family: "Roboto Mono", monospace;
+  color:white;
+  border-bottom: 1px solid white;
+}
+#github-link{
+  position: absolute;
+  font-size:150%;
+  bottom:2.5%;
+  left:10%;
+}
+#github-link i{
+  color:white;
+  padding-right:1em;
+}
+button{
+  background-color:transparent;
+  border-color:transparent;
+}
+
+#content{
+  background-color:#141414;
+}
