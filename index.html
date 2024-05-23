@@ -22,88 +22,54 @@
 
 
 <body>
-    <div id="title-page">
-        <div class="orb_bg">
-            <div class="orbs">
-                <span style="--i:21;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:30;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:27;"></span>
-                <span style="--i:26;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:31;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:19;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:32;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:34;"></span>
-                <span style="--i:15;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:35;"></span>
-                <span style="--i:29;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:24;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:33;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:30;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:27;"></span>
-                <span style="--i:26;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:31;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:19;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:16;"></span>
-            </div>
-        </div>
-        <div class="title-content">
-            <p id="title-hello">Hello</p>
-            <p id="title-name">My Name is Cesar Saavedra</p>
-            <p id="title-bio">An Aspiring Software Engineer <i class="bi bi-code-square"></i></p>
-            <button id="title-btn">Explore Portfolio</button>
-        </div>
-    </div>
 
 <div id="main-page" class="container-fluid">
     <div class="row">
         <div id="sidenav" class="col-1">
+            <!--
+            <div id="sidenav-title-container">
+                <a class="nav-link" href="#" style="font-size:250%;border: 2px solid transparent;color:white;"><i class="bi bi-house-door-fill"></i></a>
+                <p id="projects-title">Projects</p>
+            </div>
+            <div id="sidenav-links-container">
+                <div class="sidenav-link" id="sidenav-cpp-link">
+                    <a class="nav-link" href="#">C++</a>
+                </div>
+                <div class="sidenav-link" id="sidenav-java-link">
+                    <a class="nav-link" href="#">Java</a>
+                </div>
+                <div class="sidenav-link" id="sidenav-web-link">
+                    <a class="nav-link" href="#">Web</a>
+                </div>
+                <div class="sidenav-link" id="sidenav-mobile-link">
+                    <a class="nav-link" href="#">Mobile</a>
+                </div>
+            </div>
+            <div id="sidenav-footer-container">
+                <span id="github-link"><a href="https://github.com/CeSaavedra"><i class="bi bi-github"></i></a><button><i class="bi bi-moon-fill"></i></button></span>
+            </div>
+            -->
             <!-- Sidebar content -->
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-size:250%;border: 2px solid transparent;color:white;"><i class="bi bi-house-door-fill"></i></a>
+                    <a class="nav-link" id="sidenav-home-link" href="#" style="font-size:300%;border: 2px solid transparent;color:white;"><i class="bi bi-house-door-fill"></i></a>
                 </li>
                 <p id="projects-title">Projects</p>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">C++</a>
+                    <a class="nav-link" id="sidenav-cpp-link" href="#">C++</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Java</a>
+                    <a class="nav-link" id="sidenav-java-link" href="#">Java</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Web</a>
+                    <a class="nav-link" id="sidenav-web-link" href="#">Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="sidenav-mobile-link" href="#">Mobile</a>
                 </li>
             </ul>
             <span id="github-link"><a href="https://github.com/CeSaavedra"><i class="bi bi-github"></i></a><button><i class="bi bi-moon-fill"></i></button></span>
+        
         </div>
         <div id="content" class="col-11">
             <!-- Main content -->

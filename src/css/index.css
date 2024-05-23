@@ -1,6 +1,8 @@
 /* <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 700
 */
+
+/* ================= GOOGLE FONTS ================= */
 .roboto-mono-font {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -14,96 +16,7 @@
   font-style: normal;
 }
 
-#title-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background: black;
-  transition: opacity 1s ease-out; /* Add this line */
-  opacity: 1; /* Add this line */
-  z-index:2;
-}
-.title-content{
-  font-family: "Roboto Mono", monospace;
-  margin:auto;
-  width:50%;
-  text-align:center;
-  margin-top:10%;
-  color:white;
-  font-size:200%;
-}
-#title-hello, #title-name, #title-bio, #title-btn{
-  animation: fadeIn 2s;
-  animation-fill-mode: forwards;
-  opacity:0;
-}
-#title-hello{
-  font-size:500%;
-  font-stretch: extra-expanded;
-  animation-delay: 0.5s;
-}
-#title-name{
-  animation-delay: 1.5s;
-}
-#title-bio{
-  font-size:75%;
-  animation-delay: 2.5s;
-}
-#title-btn{
-  margin-top:10%;
-  font-size:75%;
-  font-stretch: extra-condensed;
-  background-color:black;
-  color:white;
-  animation-delay: 2.5s;
-}
-#title-btn:hover{
-  box-shadow: 0 0 15px white;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.orbs_bg{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.orbs{
-  position: relative;
-  display: flex;
-  z-index:0;
-}
-.orbs span{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: #ecc721;
-  margin: 0 4px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #f9d843, 0 0 50px #fbe47d,0 0 100px #fbe47d;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(125s / var(--i));
-}
-.orbs span:nth-child(even){
-  background: #2769ff;
-  box-shadow: 0 0 0 10px #5988f2, 0 0 50px #8aaeff,0 0 100px #8aaeff;
-}
-@keyframes animate{
-  0%{
-    transform: translateY(100vh) scale(0);
-  }
-  100%{
-    transform: translateY(-10vh) scale(1);
-  }
-}
+/* ====================== Contains ENTIRE WEB PAGE ====================== */                                 
 #main-page {
   position: relative;
   top: 0;
@@ -112,30 +25,42 @@
   min-height: 100vh;
   z-index:1;
 }
+
+/* ================= Contains SIDE NAVBAR ================= */     
 #sidenav, #content{
   position:relative;
 }
 #sidenav{
+  display:flex;
+  flex-direction:column;
   position:fixed;
   top:0;
   left:0;
-  background-color:#1639af;
-  min-height:100vh
+  background-color:#060606;
+  width:10%;
+  min-height:100vh;
+  transition: width 0.5s; /* Transition effect */
+  z-index:1;
+}
+
+#sidenav:hover {
+  width: 20%; /* Width when hovered */
 }
 #sidenav .nav-item{
   text-align:center;
   width:100%;
-  padding:10%;
+  margin-bottom:15%;
+}
+.nav-item a{
+  height:4em;
 }
 #sidenav .nav-link{
   color:white;
   font-size: 125%;
   font-family: "Lexend Deca", sans-serif;
-  border: 2px solid white;
-  border-radius:5%;
 }
 #sidenav .nav-link:hover{
-  background-color:#102d8c;
+  background-color:#1c1c1c;
 }
 #projects-title{
   font-size: 100%;
@@ -146,6 +71,8 @@
   color:white;
   border-bottom: 1px solid white;
 }
+
+/* ==== Sidenav Footer ====  */  
 #github-link{
   position: absolute;
   font-size:100%;
@@ -156,16 +83,46 @@
   color:white;
   padding-right:0.75em;
 }
-button{
+#sidenav button{
   background-color:transparent;
   border-color:transparent;
 }
 
+/* ==== Link Borders ====  */  
+#sidenav-home-link{
+  height:15%;
+}
+#sidenav-cpp-link{
+  border:4px solid #4885ff;
+  border-radius:7.5%;
+}
+#sidenav-java-link{
+  border:4px solid orange;
+  border-radius:7.5%;
+}
+#sidenav-web-link{
+  border:4px solid #31f974;
+  border-radius:7.5%;
+}
+#sidenav-mobile-link{
+  border:4px solid red;
+  border-radius:7.5%;
+}
+
+/* ================= Contains CONTENT ================= */     
 #content{
-  background-color:#060606;
-  margin-left:auto;
+  background-color:#202020;
+  margin-left: 10%; /* Initial margin-left */
+  transition: margin-left 0.5s, width 0.5s; /* Transition effect */
+  width: 90%; /* Initial width */
   height:100%;
 }
+#sidenav:hover ~ #content {
+  margin-left: 20%; /* margin-left when sidenav is hovered */
+  width: 80%; /* width when sidenav is hovered */
+}
+
+/* ============ Contains INTRO ============ */ 
 #main-desc{
   position:relative;
   margin:auto;
@@ -189,6 +146,8 @@ button{
   width:80%;
   color:#d2d2d2;
 }
+
+/* ============ Contains FEATURED PROJECTS ============ */ 
 #featured-title{
   position:relative;
   text-align:center;
