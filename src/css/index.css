@@ -116,6 +116,8 @@
   transition: margin-left 0.5s, width 0.5s; /* Transition effect */
   width: 90%; /* Initial width */
   height:100%;
+  display:flex;
+  flex-direction:column;
 }
 #sidenav:hover ~ #content {
   margin-left: 20%; /* margin-left when sidenav is hovered */
@@ -125,39 +127,33 @@
 /* ============ Contains INTRO ============ */ 
 #main-desc{
   position:relative;
-  margin:auto;
-  margin-top:2.5%;
-  height:10em;
-  width: 80%;
-  color:white;
+  margin-top:4em;
+  margin-bottom:4em;
+  height:40em;
+  width: 100%;
+
+  color:black;
   text-align:center;
   font-family: "Roboto Mono", monospace;
-  padding-bottom:12.5%;
+  background-color:#c0c0c0;
+  border-radius:6%;
 }
 #main-desc h1{
   padding-top:3%;
 }
 #main-desc p{
-  position:relative;
   font-family: "Lexend Deca", sans-serif;
   font-size:120%;
+  color:black;
+
+  position:relative;
   padding-top:2.5%;
   margin:auto;
   width:80%;
-  color:#d2d2d2;
 }
 
 /* ============ Contains FEATURED PROJECTS ============ */ 
-#featured-title{
-  position:relative;
-  text-align:center;
-  margin:auto;
-  color:white;
-  height:10%;
-  margin-top:5%;
-  font-family: "Roboto Mono", monospace;
-  font-size:250%;
-}
+
 .my-3{
   height:40em;
   display:flex;
@@ -206,4 +202,18 @@
   text-align:center;
   font-size:1.5em;
   color:orange;
+}
+
+
+.page-divider-title{
+  text-align:center;
+  color:white;
+  font-family: "Roboto Mono", monospace;
+  font-size:250%;
+  border-bottom: 2px solid white;
+
+  position:relative;
+  margin:auto;
+  height:2em;
+  width:40%;
 }
