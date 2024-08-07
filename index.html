@@ -25,56 +25,38 @@
 
 <div id="main-page" class="container-fluid">
     <div class="row">
+
+        <!-- ============= SIDENAV ============= -->
         <div id="sidenav" class="col-1">
-            <!--
-            <div id="sidenav-title-container">
-                <a class="nav-link" href="#" style="font-size:250%;border: 2px solid transparent;color:white;"><i class="bi bi-house-door-fill"></i></a>
-                <p id="projects-title">Projects</p>
-            </div>
-            <div id="sidenav-links-container">
-                <div class="sidenav-link" id="sidenav-cpp-link">
-                    <a class="nav-link" href="#">C++</a>
-                </div>
-                <div class="sidenav-link" id="sidenav-java-link">
-                    <a class="nav-link" href="#">Java</a>
-                </div>
-                <div class="sidenav-link" id="sidenav-web-link">
-                    <a class="nav-link" href="#">Web</a>
-                </div>
-                <div class="sidenav-link" id="sidenav-mobile-link">
-                    <a class="nav-link" href="#">Mobile</a>
-                </div>
-            </div>
-            <div id="sidenav-footer-container">
-                <span id="github-link"><a href="https://github.com/CeSaavedra"><i class="bi bi-github"></i></a><button><i class="bi bi-moon-fill"></i></button></span>
-            </div>
-            -->
-            <!-- Sidebar content -->
+
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link" id="sidenav-home-link" href="#" style="font-size:300%;border: 2px solid transparent;color:white;"><i class="bi bi-house-door-fill"></i></a>
                 </li>
-                <p id="projects-title">Projects</p>
+                <p id="projects-title">Navigate</p>
                 <li class="nav-item">
-                    <a class="nav-link" id="sidenav-cpp-link" href="#">C++</a>
+                    <a class="nav-link" id="sidenav-cpp-link" href="#">Item1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="sidenav-java-link" href="#">Java</a>
+                    <a class="nav-link" id="sidenav-java-link" href="#">Item2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="sidenav-web-link" href="#">Web</a>
+                    <a class="nav-link" id="sidenav-web-link" href="#">Item3</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="sidenav-mobile-link" href="#">Mobile</a>
+                    <a class="nav-link" id="sidenav-mobile-link" href="#">Item4</a>
                 </li>
             </ul>
             <span id="github-link"><a href="https://github.com/CeSaavedra"><i class="bi bi-github"></i></a><button><i class="bi bi-moon-fill"></i></button></span>
         
         </div>
+
+        <!-- ============= CONTAINS ALL CONTENT OUTSIDE OF SIDENAV ============= -->
         <div id="content" class="col-11">
-            <!-- Main content -->
+
+            <!-- ============= INTRODUCTION SECTION ============= -->
             <div id="main-desc">
-                <h1>Welcome to my Portfolio</h1>
+                <h1>My Portfolio</h1>
                 <p>
                     Thank you for visiting my software engineering portfolio. 
                     To explore all my projects you may navigate through the side navigation bar on the left-hand side of your screen. 
@@ -82,68 +64,39 @@
                 </p>
             </div>
 
-            <!-- ============= CAPSTONE PROJECT SECTION ============= -->
+            <!-- ============= KEYSTONE PROJECT SECTION ============= -->
 
-            <!-- Capstone Project Title -->
             <div class="page-divider-title">
-                <p>Keystone Projects</p>
+                <p>Featured Projects</p>
             </div>
-            <!-- Capstone Project 1 -->
             <div class="row my-3 p-3">
-                <div id="img-box">
-                    <img src="src/assets/images/title_bg.jpg">
-                </div>
-                <div id="post-info">
-                    <div id="post-type" style="border-color:orange;">
-                        <p style="color:orange;">Java</p>
+                <div class="key-project-container">
+                    <div class="key-project">
+                        <div id="img-box">
+                            <img src="src/assets/images/title_bg.jpg">
+                        </div>
                     </div>
-                    <h1 id="post-title">
-                        Project Title
-                    </h1>
-                    <p>
-                        Project Description here.
-                    </p>
                 </div>
-            </div>
-            <!-- Capstone Project 2 -->
-            <div class="row my-3 p-3">
-                <div id="img-box">
-                    <img src="src/assets/images/title_bg.jpg">
-                </div>
-                <div id="post-info">
-                    <div id="post-type" style="border-color:#4885ff;">
-                        <p style="color:#4885ff;">C++</p>
+                <div class="key-project-container">
+                    <div class="key-project">
+                        <div id="img-box">
+                            <img src="src/assets/images/title_bg.jpg">
+                        </div>
                     </div>
-                    <h1 id="post-title">
-                        Project Title
-                    </h1>
-                    <p>
-                        Project Description here.
-                    </p>
                 </div>
-            </div>
-            <!-- Capstone Project 3 -->
-            <div class="row my-3 p-3">
-                <div id="img-box">
-                    <img src="src/assets/images/title_bg.jpg">
-                </div>
-                <div id="post-info">
-                    <div id="post-type" style="border-color:#31f974;">
-                        <p style="color:#31f974;">Web</p>
+                <div class="key-project-container">
+                    <div class="key-project">
+                        <div id="img-box">
+                            <img src="src/assets/images/title_bg.jpg">
+                        </div>
                     </div>
-                    <h1 id="post-title">
-                        Project Title
-                    </h1>
-                    <p>
-                        Project Description here.
-                    </p>
                 </div>
             </div>
 
             <!-- ============= C++ PROJECT SECTION ============= -->
             
             <div class="page-divider-title">
-                <p>C++ Based Projects</p>
+                <p>All Projects</p>
             </div>
         </div>
     </div>
