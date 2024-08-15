@@ -42,10 +42,10 @@
                     <form id="input-form">
                         <div id="input-header-container">
                             <div class="xy-header-container">
-                                <h2>X</h2>
+                                <h2 id="x-header">X</h2>
                             </div>
                             <div class="xy-header-container">
-                                <h2>Y</h2>
+                                <h2 id="y-header">Y</h2>
                             </div>
                         </div>
                         <div id="scrollable-wrapper">
@@ -54,14 +54,11 @@
                                     <div class="input-row-number">
                                         <p>1</p>
                                     </div>
-                                    <div class="input-row-delete">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                    </div>
                                     <div class="input-row-x">
-                                        <input type="text" name="x-coord">
+                                        <input type="number" step="0.01" name="x-coord">
                                     </div>
                                     <div class="input-row-y">
-                                        <input type="text" name="y-coord">
+                                        <input type="number" step="0.01" name="y-coord">
                                     </div>
                                 </div>
                                 <div class="input-row">
@@ -69,19 +66,19 @@
                                         <p>2</p>
                                     </div>
                                     <div class="input-row-x">
-                                        <input type="text">
+                                        <input type="number" step="0.01" name="x-coord">
                                     </div>
                                     <div class="input-row-y">
-                                        <input type="text">
+                                        <input type="number" step="0.01" name="y-coord">
                                     </div>
                                 </div>
                                 <div class="input-append">
-                                    <button type="button" id="input-append-btn">Add Another Pair</button>
+                                    <button type="button" id="input-append-btn">Add Pair</button>
                                 </div>
                             </div>
                         </div>
                         <div id="input-submit-container">
-                            <button type="submit">Graph</button>
+                            <button id="graph-btn" type="submit">Graph</button>
                         </div>
                     </form>
                 </div>
