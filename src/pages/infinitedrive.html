@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Drive</title>
+  <link rel="stylesheet" href="../css/id_style.css" />
+</head>
+
+<body>
+  <main>
+    <div id="container3D"></div>
+
+    <!-- === HUD === -->
+    <div id="hud">
+      <div id="speedDisplay">Speed: 0 km/h</div>
+      <div id="brakeStatus">Braking</div>
+      <div id="scoreDisplay">Score: 0 mi</div>
+    </div>
+
+    <!-- === collision and wasted/retry === -->
+
+    <div id="gameOverOverlay">
+      <div id="wastedText">WASTED</div>
+      <div id="finalScore">Score: 0</div>
+      <button id="retryBtn">RETRY</button>
+    </div>
+  </main>
+
+  <script type="module" src="../js/id_main.js"></script>
+</body>
+
+</html>
