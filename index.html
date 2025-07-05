@@ -1,112 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CS Portfolio</title>
-    <link rel="icon" href="src\assets\images\tab_image.PNG">
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <link rel="stylesheet" href="src/css/index.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cesar Saavedra Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="icon" href="src/assets/icons/tab-icon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <script src="src/js/main.js" defer></script>
 </head>
 
-
 <body>
+    <!-- Navigation overlay: These buttons are overlaid on every page -->
+    <div class="navigation-overlay">
+        <button id="homeBtn" class="nav-button nav-left"
+            onclick="document.querySelector('.scroll-container').scrollTo({ top: 0, behavior: 'smooth' });">
+            <img src="src/assets/icons/home.svg" alt="Home" width="35" height="35" />
+        </button>
 
-<div id="main-page" class="container-fluid">
-    <div class="row">
+        <button class="nav-button nav-right" id="menuBtn">
+            <img src="src/assets/icons/menu.svg" alt="Menu" width="50" height="50" />
+        </button>
 
-        <!-- ============= SIDENAV ============= -->
-        <div id="sidenav" class="col-1">
-
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" id="sidenav-home-link" href="src/pages/infinitedrive.html" style="font-size:300%;border: 2px solid transparent;color:white;">
-                        <i class="bi bi-house-door-fill"></i>
-                    </a>
-                </li>
-                <p id="projects-title">Navigate</p>
-                <li class="nav-item">
-                    <a class="nav-link" id="sidenav-cpp-link" href="#">Item1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="sidenav-java-link" href="#">Item2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="sidenav-web-link" href="#">Item3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="sidenav-mobile-link" href="#">Item4</a>
-                </li>
-            </ul>
-            <span id="github-link"><a href="https://github.com/CeSaavedra"><i class="bi bi-github"></i></a><button><i class="bi bi-moon-fill"></i></button></span>
-        
+        <!-- SIDE NAV PANEL -->
+        <div id="sideNav" class="side-nav-container">
+            <nav>
+                <ul class="roboto-flex-semibold">
+                    <li><a href="#section-about">About Me</a></li>
+                    <li><a href="#section-featured">Featured Projects</a></li>
+                    <li><a href="#section-projects">Other Projects</a></li>
+                    <li><a href="https://github.com/CeSaavedra">Github</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <!-- ============= CONTAINS ALL CONTENT OUTSIDE OF SIDENAV ============= -->
-        <div id="content" class="col-11">
-
-            <!-- ============= INTRODUCTION SECTION ============= -->
-            <div id="main-desc">
-                <h1>My Portfolio</h1>
-                <p>
-                    Thank you for visiting my software engineering portfolio. 
-                    To explore all my projects you may navigate through the side navigation bar on the left-hand side of your screen. 
-                    The projects you will find below are my featured projects that serve as a keystones in my professional journey.
-                </p>
-            </div>
-
-            <!-- ============= KEYSTONE PROJECT SECTION ============= -->
-
-            <div class="page-divider-title">
-                <p>Featured Projects</p>
-            </div>
-            <div class="row my-3 p-3">
-                <div class="key-project-container">
-                    <div class="key-project">
-                        <div id="img-box">
-                            <img src="src/assets/images/title_bg.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="key-project-container">
-                    <div class="key-project">
-                        <div id="img-box">
-                            <img src="src/assets/images/title_bg.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="key-project-container">
-                    <div class="key-project">
-                        <div id="img-box">
-                            <img src="src/assets/images/title_bg.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ============= C++ PROJECT SECTION ============= -->
-            
-            <div class="page-divider-title">
-                <p>All Projects</p>
-            </div>
-        </div>
+        <!-- GRADIENT OVERLAY -->
+        <div id="gradientOverlay" class="gradient-overlay"></div>
     </div>
-</div>
 
 
-    <script src="src/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Main scrollable content container -->
+    <div class="scroll-container">
+
+        <!-- Section 1: About/Introduction -->
+        <section class="scroll-section" id="section-about">
+            <div class="content">
+                <div class="intro_title">
+                    <h1 id="intro_title_text">
+                        Hello, my name is<br>
+                        <span style="
+                        color: rgb(255, 186, 75);
+                        display: block;
+                        text-shadow: 0 0 6px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255, 81, 0, 0.5);
+                      "> Cesar Saavedra
+                            <img id="developer_icon" src="src/assets/icons/developer.svg" alt="Developer Icon"
+                                width="45" height="45" style="vertical-align: middle;" />
+                        </span>
+                    </h1>
+                </div>
+                <div class="intro_info">
+                    <div class="intro_image">
+                        <div class="intro_image_placeholder"></div>
+                    </div>
+                    <div class="intro_description">
+                        <div class="intro_description_text">
+                            <h3 class="about_me">About Me</h3>
+                            <p class="about-description">Passionate Software Engineer with a focus on [...]. I earned my
+                                Bachelors Degree in Computer Science from Towson University. I’ve scsusfulcley dle
+                                prjocets liek na awrda-winnign atda vsiuaolzatini otol nad a dynmaic e-moccreme
+                                platofrm, whcih hihglight ym stgnerhts in dsign, efficneciy, nad rseu-cnetir dveploemnt.
+                                lwayas egrea ot lrean, I cnotirbute ot pone-sruoce prjocets nad cnotniouusly exolrpe
+                                emgreing tcehnoolgies ot dveir inovtaoin.
+                                I lkoo fowrard ot cllaboantrgi no mninageful prjocets taht psuh hte boudnieras of mrodne
+                                cmpotnuing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro_navigation">
+                    <span class="intro-navigation-arrow">▼</span>
+                    <p class="intro-navigation-text">Scroll Down to Projects</p>
+                    <span class="intro-navigation-arrow">▼</span>
+                </div>
+        </section>
+
+
+
+
+
+
+        <!-- Section 2: Projects (Horizontal Scrolling Detail Section) -->
+        <section class="scroll-section" id="section-featured">
+            <div class="horizontal-scroll">
+
+                <!-- Section 2: Projects (Horizontal Scrolling Detail Section) -->
+                <div class="horizontal-page">
+                    <div class="featured-projects-intro__header">
+                        <h1 class="featured-projects-intro__title roboto-flex-semibold">
+                            Featured Projects
+                        </h1>
+                    </div>
+
+                    <div class="featured-projects-intro__main">
+                        <div class="featured-projects-intro__sidebar
+                                 featured-projects-intro__sidebar--left">
+                            <!-- left-column content -->
+                        </div>
+
+                        <div class="featured-projects-intro__content">
+                            <div class="featured-projects-intro__about">
+                                <p class="gradient-text roboto-flex-semibold">Here I showcase work spanning web development, mobile apps, Java utilities, and computer graphics projects. Each project page dives into the technical challenges I overcame, the design decisions I made, and the tools I used to deliver reliable, user-focused solutions.</p>
+                            </div>
+                            <div class="featured-projects-intro__nav">
+                                <div class="carousel">
+                                    <div class="carousel__track">
+                                      <div class="carousel__item">1</div>
+                                      <div class="carousel__item">2</div>
+                                      <div class="carousel__item">3</div>
+                                      <div class="carousel__item">4</div>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                            <div class="featured-projects-intro__scroll">
+                                <span class="intro-navigation-arrow">▼</span>
+                                <p class="intro-navigation-text">Scroll Down to Projects</p>
+                                <span class="intro-navigation-arrow">▼</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-projects-intro__sidebar
+                                 featured-projects-intro__sidebar--right">
+                            <!-- right-column content -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="horizontal-page">
+                    <h2 class="gradient-text">Detail 2</h2>
+                </div>
+                <div class="horizontal-page">
+                    <h2 class="gradient-text">Detail 3</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects Showcase -->
+        <section class="scroll-section" id="section-projects">
+            <div class="content">Projects Showcase</div>
+        </section>
+
+    </div>
 </body>
 
+  
 </html>
