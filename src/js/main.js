@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const carousel   = document.querySelector('.carousel');
   const track      = carousel.querySelector('.carousel__track');
-  const THRESHOLD  = 0.4;   // 40% zones on either edge
-  const SPEED      = 4;     // px per frame
+  const THRESHOLD  = 0.3;   // 40% zones on either edge
+  const SPEED      = 8;     // px per frame
   let mousePos     = 0;
   let frameId;
   let activeItem   = null;
